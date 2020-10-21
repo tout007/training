@@ -1,4 +1,4 @@
-  
+puts("addition operator")    
  puts(10 + 20)      
  puts("subtract operator")   
  puts(35 - 15)    
