@@ -1,0 +1,5 @@
+a = "Hello"
+puts "#{a.length}"
+puts "#{a.size}"
+puts "#{a.empty?}"
+puts "#{a.reverse}"
