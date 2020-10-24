@@ -1,26 +1,27 @@
 class Percentage
-    def calculate(science,math,english,hindi,social_science)
-      @science, @math, @english, @hindi, @social_science = science, math, english, hindi, social_science
-      return (@science + @math + @english + @hindi + @social_science)/5.0
+    def calculate(numbers,subjects)
+      @numbers,@subjects = numbers, subjects
+      sum = 0
+      @numbers.each do |a| 
+        sum+=a 
+      end
+      
+      return sum/@subjects
     end
 end
 
-puts "enter number of 5 subject"
-puts "total marks in science"
-science = gets.chomp.to_f
+puts "enter total number of subject"
+subjects =  gets.chomp().to_i
+numbers = []
 
-puts "total marks in math"
-math = gets.chomp.to_f
+for i in (0..subjects-1) do 
+  puts "enter name of subject"
+  a = gets.chomp().to_s
+  puts "enter total number in #{a}"
+  number = gets.chomp().to_f
+  numbers << number
 
-puts "total marks in english"
-english = gets.chomp.to_f
-
-puts "total marks in hindi"
-hindi = gets.chomp.to_f
-
-puts "total marks in social_science"
-social_science = gets.chomp.to_f
-
-
+end
 obj = Percentage.new()
-puts obj.calculate(science,math,english,hindi,social_science)
+puts "your percentage is #{obj.calculate(numbers,subjects)}" 
+  
