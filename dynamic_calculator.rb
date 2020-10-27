@@ -1,9 +1,4 @@
 class Calculator
-    def calculator()
-        obj3 = Calculator.new()
-        obj3.info()   
-    end
-
     def info
         puts "enter two number for calculation"
         puts "enter first number"
@@ -36,7 +31,7 @@ class Calculator
         one = gets.chomp().to_i
         if one ==1
             obj2 = Calculator.new()
-            obj2.calculator()
+            obj2.info()
         end
 
     end
