@@ -7,7 +7,7 @@
 		peragraph.each {|w|
 		peragraph_hash[w] += 1}
 		peragraph_hash.each { |key, value|
-		puts " the word is #{key} and counting of repeated  word is  #{value}"}
+		puts "the word is #{key} and counting of repeated  word is  #{value}"}
    
 
 	
