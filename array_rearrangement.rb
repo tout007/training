@@ -1,4 +1,4 @@
-class Mrray
+class Rearrangment
     def arrangment(array) 
       new_array = []
       array1 = array.sort
@@ -21,7 +21,7 @@ end
    for i in (0..n-1)
     array << gets.chomp().to_i
    end  
-   obj = Mrray.new()
+   obj = Rearrangment.new()
    obj.arrangment(array)
 
    
