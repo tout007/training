@@ -1,25 +1,24 @@
 class CheckGreater
-    def get_inputs
-        puts "Please Enter any two number"
+     def get_inputs
         puts "Enter First Number"
-        @a = gets.chomp.to_i
+        @num1 = gets.chomp.to_i
         puts "Enter Second Number"
-        @b = gets.chomp.to_i
-    end
-    def check_number
+        @num2 = gets.chomp.to_i
+        check_number
+     end
+     def check_number
        begin
-         if @a/@b == 0
-            puts "#{@b} is Greater"
-         elsif @b/@a == 1
+         if @num1/@num2 == 0
+            puts "#{@num2} is Greater"
+         elsif @num2/@num1 == 1
            puts "Both Number are equal" 
          else
-            puts "#{@a} is Greater"     
+            puts "#{@num1} is Greater"     
          end
        rescue Exception => e
-          puts " #{@a} is Greater "
+          puts " #{@num1} is Greater "
        end
-    end 
+     end 
 end 
-obj_check = CheckGreater.new()
-obj_check.get_inputs()
-obj_check.check_number()
+CheckGreater.new().get_inputs()
+
