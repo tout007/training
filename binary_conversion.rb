@@ -19,4 +19,4 @@ class BinaryConversion
 end
 conversion_obj = BinaryConversion.new() 
 conversion_obj.get_number()
-conversion_obj.Decimal_to_binary()
+conversion_obj.decimal_to_binary()
