@@ -5,7 +5,7 @@ for i in (0..n-1)
 array << gets.chomp().to_i
 end 
 
-max = 0
+max = array[0]
 min = array[0]
 
 for element in array
